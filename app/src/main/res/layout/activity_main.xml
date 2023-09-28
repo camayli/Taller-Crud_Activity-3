@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_titulo"
+        android:textAlignment="center"
+        android:textSize="32dp"/>
+
+    <EditText
+        android:id="@+id/ETDocumento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_documento"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/ETNombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_nombres"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/ETApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_apellidos"
+        android:minHeight="48dp" />
+         />
+
+    <EditText
+        android:id="@+id/ETUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_usuario"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/ETContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_contra"
+        android:minHeight="48dp"
+        android:inputType="textPassword" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/BTNRegistrar"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="accionRegistrar"
+            android:text="@string/bt_registrar" />
+
+        <Button
+            android:id="@+id/BTNBuscar"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="modificar"
+            android:text="@string/bt_buscar" />
+
+        <Button
+            android:id="@+id/BTNListar"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Traerdatos"
+            android:text="@string/bt_listar_registros" />
+
+
+    </TableRow>
+
+    <ListView
+        android:id="@+id/LV_lista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
